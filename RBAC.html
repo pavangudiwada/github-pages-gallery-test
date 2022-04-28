@@ -4,16 +4,17 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Photo Gallery - RBAC</title>
+      <title>Kubernetes Simplified - RBAC</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
       <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
       <link rel="stylesheet" href="public/core.css" />
       <link rel="stylesheet" href="public/theme.css" />
+      <link rel="stylesheet" href="public/justifiedgallery/justifiedGallery.min.css" />
   </head>
 
   <body>
-
     
     <div id="container">
     
@@ -21,7 +22,7 @@
         Gallery title
       -->
       <header>
-        <h1><a href="index.html">Photo Gallery</a></h1>
+        <h1><a href="index.html">Kubernetes Simplified</a></h1>
       </header>
     
       <!--
@@ -31,59 +32,45 @@
     <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="RBAC.html">RBAC</a>
       </nav>
     
+    
       <!--
         Nested albums, if any
       -->
-      <div id="albums">
+      <div id="albums" class="justified-gallery">
       </div>
     
       <!--
         All photos and videos
       -->
-      <ul id="media" class="clearfix">
+      <ul id="media" class="clearfix justified-gallery">
           
-            <li data-src="media/large/RBAC/RbacRole.jpg"
-                data-sub-html=""
-                data-download-url="media/original/RBAC/RbacRole.jpg"
-                
-                data-filename="RbacRole.jpg"
-          
-              >
-              <a href="media/original/RBAC/RbacRole.jpg">
-                <img src="media/thumbs/RBAC/RbacRole.jpg"
-                     width="120"
-                     height="120"
-                     alt="RbacRole.jpg" />
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/RBAC/RbacRole.jpg"data-src="media/large/RBAC/RbacRole.jpg"data-exthumbimage="media/thumbs/RBAC/RbacRole.jpg"data-filename="RbacRole.jpg"><a href="media/large/RBAC/RbacRole.jpg"><img
+                      src="media/small/RBAC/RbacRole.jpg"
+                      width="369.55460646735816"
+                      height="300"alt="RbacRole.jpg"/>
               </a>
-            </li>      
-            <li data-src="media/large/RBAC/Untitled-2022-02-20-1027(2).png"
-                data-sub-html=""
-                data-download-url="media/original/RBAC/Untitled-2022-02-20-1027(2).png"
-                
-                data-filename="Untitled-2022-02-20-1027(2).png"
           
-              >
-              <a href="media/original/RBAC/Untitled-2022-02-20-1027(2).png">
-                <img src="media/thumbs/RBAC/Untitled-2022-02-20-1027(2).png"
-                     width="120"
-                     height="120"
-                     alt="Untitled-2022-02-20-1027(2).png" />
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/RBAC/Untitled-2022-02-20-1027(2).png"data-src="media/large/RBAC/Untitled-2022-02-20-1027(2).png"data-exthumbimage="media/thumbs/RBAC/Untitled-2022-02-20-1027(2).png"data-filename="Untitled-2022-02-20-1027(2).png"><a href="media/large/RBAC/Untitled-2022-02-20-1027(2).png"><img
+                      src="media/small/RBAC/Untitled-2022-02-20-1027(2).png"
+                      width="535.8893777498429"
+                      height="300"alt="Untitled-2022-02-20-1027(2).png"/>
               </a>
-            </li>      
-            <li data-src="media/large/RBAC/az400.png"
-                data-sub-html=""
-                data-download-url="media/original/RBAC/az400.png"
-                
-                data-filename="az400.png"
           
-              >
-              <a href="media/original/RBAC/az400.png">
-                <img src="media/thumbs/RBAC/az400.png"
-                     width="120"
-                     height="120"
-                     alt="az400.png" />
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/RBAC/az400.png"data-src="media/large/RBAC/az400.png"data-exthumbimage="media/thumbs/RBAC/az400.png"data-filename="az400.png"><a href="media/large/RBAC/az400.png"><img
+                      src="media/small/RBAC/az400.png"
+                      width="540.8713692946059"
+                      height="300"alt="az400.png"/>
               </a>
-            </li>  </ul>
+          
+          </div>  </ul>
     
       <!--
         Pagination
@@ -93,12 +80,11 @@
         Zip file link
       -->
     
-    
       <!--
         Optional footer
       -->
       <footer>
-        <p>Test Page</p>
+        <p>Made with </p>
       </footer>
     
     </div>
@@ -112,11 +98,13 @@
     <script src="public/videojs/video.min.js"></script>
     <!-- LightGallery -->
     <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightslider/js/lightslider.min.js"></script>
     <script src="public/lightgallery/js/lg-autoplay.js"></script>
     <script src="public/lightgallery/js/lg-pager.js"></script>
     <script src="public/lightgallery/js/lg-thumbnail.js"></script>
     <script src="public/lightgallery/js/lg-video.js"></script>
     <script src="public/lightgallery/js/lg-exif.min.js"></script>
+    <script src="public/justifiedgallery/jquery.justifiedGallery.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -126,10 +114,28 @@
           loop : false,
           download: true,
           counter: true,
-          videojs: true
+          videojs: true,
+          exThumbImage: 'data-exthumbimage',
+        });
+
+        // Init justified gallery for albums
+        $("#albums").justifiedGallery({
+          margins: 10,
+          rowHeight: 300,
+          maxRowHeight: 325,
+        });
+
+        // Init justified gallery for photos
+        $("#media").justifiedGallery({
+          selector: '.albumList',
+          waitThumbnailsLoad: false,
+          margins: 10,
+          rowHeight: 250,
+          maxRowHeight: 275,
         });
       });
     </script>
+
 
 
   </body>
