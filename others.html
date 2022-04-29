@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Kubernetes Simplified - Home</title>
+      <title>Kubernetes Simplified - others</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -29,7 +29,7 @@
         Breadcrumbs of parent albums
       -->
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="others.html">others</a>
       </nav>
     
     
@@ -37,25 +37,11 @@
         Nested albums, if any
       -->
       <div id="albums" class="justified-gallery">
-            <a href="Basics.html">
-              <img src="media/small/Basics/KubernetesExtension.png" alt="">
+            <a href="others-thumbnails.html">
+              <img src="media/small/others/thumbnails/AzureAppServices.png" alt="">
               <div class="caption" style="display: inline-block">
-                <h3>Basics</h3>
-                <div class="summary">4 photos</div>
-              </div>
-            </a>
-            <a href="RBAC.html">
-              <img src="media/small/RBAC/RbacRole.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>RBAC</h3>
-                <div class="summary">1 photo</div>
-              </div>
-            </a>
-            <a href="others.html">
-              <img src="media/small/others/GitOpsBasics.png" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>others</h3>
-                <div class="summary">1 album, 9 photos</div>
+                <h3>thumbnails</h3>
+                <div class="summary">6 photos</div>
               </div>
             </a>
       </div>
@@ -64,7 +50,34 @@
         All photos and videos
       -->
       <ul id="media" class="clearfix justified-gallery">
-      </ul>
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/others/GitOpsBasics.png"data-src="media/large/others/GitOpsBasics.png"data-exthumbimage="media/thumbs/others/GitOpsBasics.png"data-filename="GitOpsBasics.png"><a href="media/large/others/GitOpsBasics.png"><img
+                      src="media/small/others/GitOpsBasics.png"
+                      width="549.3942218080149"
+                      height="300"alt="GitOpsBasics.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/others/TraditionalDevOps.png"data-src="media/large/others/TraditionalDevOps.png"data-exthumbimage="media/thumbs/others/TraditionalDevOps.png"data-filename="TraditionalDevOps.png"><a href="media/large/others/TraditionalDevOps.png"><img
+                      src="media/small/others/TraditionalDevOps.png"
+                      width="300.7009345794392"
+                      height="300"alt="TraditionalDevOps.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/others/terraformWorkflow.png"data-src="media/large/others/terraformWorkflow.png"data-exthumbimage="media/thumbs/others/terraformWorkflow.png"data-filename="terraformWorkflow.png"><a href="media/large/others/terraformWorkflow.png"><img
+                      src="media/small/others/terraformWorkflow.png"
+                      width="549.6738117427773"
+                      height="300"alt="terraformWorkflow.png"/>
+              </a>
+          
+          </div>  </ul>
     
       <!--
         Pagination
@@ -130,30 +143,6 @@
       });
     </script>
 
-      <script id="slider-js" data-interval="">
-        $(document).ready(function () {
-          let waitTime = 1000;
-
-          try {
-            waitTime = parseInt($("#slider-js").data("interval"));
-          } catch (e) {
-            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
-          }
-
-          $("#lightSlider").lightSlider({
-            auto: true,
-            loop: true,
-            item: 1,
-            gallery: true,
-            pause: waitTime,
-            onSliderLoad: (el) => {
-              el.lightGallery({
-                selector: "#lightSlider li"
-              })
-            }
-          });
-        });
-      </script>
 
 
   </body>

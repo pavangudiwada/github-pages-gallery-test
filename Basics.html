@@ -4,7 +4,7 @@
   <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
-      <title>Kubernetes Simplified - Home</title>
+      <title>Kubernetes Simplified - Basics</title>
       <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
       <link rel="stylesheet" href="public/lightslider/css/lightslider.min.css" />
       <link rel="stylesheet" href="public/videojs/video-js.min.css" />
@@ -29,7 +29,7 @@
         Breadcrumbs of parent albums
       -->
       <nav class="breadcrumbs">
-    <a class="breadcrumb-item" href="index.html">Home</a>
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="Basics.html">Basics</a>
       </nav>
     
     
@@ -37,34 +37,49 @@
         Nested albums, if any
       -->
       <div id="albums" class="justified-gallery">
-            <a href="Basics.html">
-              <img src="media/small/Basics/KubernetesExtension.png" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>Basics</h3>
-                <div class="summary">4 photos</div>
-              </div>
-            </a>
-            <a href="RBAC.html">
-              <img src="media/small/RBAC/RbacRole.jpg" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>RBAC</h3>
-                <div class="summary">1 photo</div>
-              </div>
-            </a>
-            <a href="others.html">
-              <img src="media/small/others/GitOpsBasics.png" alt="">
-              <div class="caption" style="display: inline-block">
-                <h3>others</h3>
-                <div class="summary">1 album, 9 photos</div>
-              </div>
-            </a>
       </div>
     
       <!--
         All photos and videos
       -->
       <ul id="media" class="clearfix justified-gallery">
-      </ul>
+          
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Basics/KubernetesExtension.png"data-src="media/large/Basics/KubernetesExtension.png"data-exthumbimage="media/thumbs/Basics/KubernetesExtension.png"data-filename="KubernetesExtension.png"><a href="media/large/Basics/KubernetesExtension.png"><img
+                      src="media/small/Basics/KubernetesExtension.png"
+                      width="291.71159029649596"
+                      height="300"alt="KubernetesExtension.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Basics/KubernetesLovesDatree.png"data-src="media/large/Basics/KubernetesLovesDatree.png"data-exthumbimage="media/thumbs/Basics/KubernetesLovesDatree.png"data-filename="KubernetesLovesDatree.png"><a href="media/large/Basics/KubernetesLovesDatree.png"><img
+                      src="media/small/Basics/KubernetesLovesDatree.png"
+                      width="450.3529411764706"
+                      height="300"alt="KubernetesLovesDatree.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Basics/User2Server.png"data-src="media/large/Basics/User2Server.png"data-exthumbimage="media/thumbs/Basics/User2Server.png"data-filename="User2Server.png"><a href="media/large/Basics/User2Server.png"><img
+                      src="media/small/Basics/User2Server.png"
+                      width="622.7506426735218"
+                      height="300"alt="User2Server.png"/>
+              </a>
+          
+          </div>      
+          <div class="albumList"
+              data-sub-html=""
+              data-download-url="media/original/Basics/UserToKubernetes.png"data-src="media/large/Basics/UserToKubernetes.png"data-exthumbimage="media/thumbs/Basics/UserToKubernetes.png"data-filename="UserToKubernetes.png"><a href="media/large/Basics/UserToKubernetes.png"><img
+                      src="media/small/Basics/UserToKubernetes.png"
+                      width="548.8867376573088"
+                      height="300"alt="UserToKubernetes.png"/>
+              </a>
+          
+          </div>  </ul>
     
       <!--
         Pagination
@@ -130,30 +145,6 @@
       });
     </script>
 
-      <script id="slider-js" data-interval="">
-        $(document).ready(function () {
-          let waitTime = 1000;
-
-          try {
-            waitTime = parseInt($("#slider-js").data("interval"));
-          } catch (e) {
-            console.error("Invalid speed value for slider: " + waitTime + "\n" + e);
-          }
-
-          $("#lightSlider").lightSlider({
-            auto: true,
-            loop: true,
-            item: 1,
-            gallery: true,
-            pause: waitTime,
-            onSliderLoad: (el) => {
-              el.lightGallery({
-                selector: "#lightSlider li"
-              })
-            }
-          });
-        });
-      </script>
 
 
   </body>
