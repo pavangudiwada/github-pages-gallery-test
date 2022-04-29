@@ -149,7 +149,8 @@ nav.pagination a {
   color: #3399ff;
 }
 /* Your custom styles goes here */
-body{
+#container{
   background-color: #1d1e22;
+  color: white;
 }
 
