@@ -10,6 +10,5 @@
   "css": "./custom.css",
   "footer": "Made with ",
   "usage-stats": true,
-  "thumb-size": 200,
-  "large-size": 500
+  "thumb-size": 200
 }
